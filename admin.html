@@ -7,57 +7,57 @@
     <link rel = "stylesheet" href = "style.css">
 </head>
 <body>
-    <header class = "top-nav"></header>
-    <div class = "nav-left">
+    <nav class = "navbar">
         <h2>Fleet Admin</h2>
-    </div>
-    <div class = "nav-filters">
-        <label>
-            Category:
-            <select id = "filterCategory">
-                <option value = "All">All</option>
-                <option>Auto</option>
-                <option>Car</option>
-                 <option>Truck</option>
-                <option>Bus</option>
-            </select>
-        </label>
-
-        <label>
-            Availability:
-            <select id = "filterAvailability">
-                <option value = "All Availability">All</option>
-                <option value = "Available">Available</option>
-              <option value = "Unavailable">Available</option>
-            </select>
-        </label>
-
-        <button id = "clearFilterBtn" class = "small">Clear Filter</button>
-    </div>
-</header>
-    <div class = "dash-container">
-        <div class = "sidebar">
-            <h3>Add Fleet</h3>
-            <input type = "text" id = "regdNo" placeholder="Reg No / Vehicle">
+    </nav>
+    <div class = "container">
+        <aside class ="sidebar">
+            <h3> Add Fleet</h3>
+            <input type = "text" id ="vehicleNumber" placeholder="Vehicle Number">
             <select id = "category">
-                <option value = "">Select Category</option>
                 <option value = "Auto">Auto</option>
                 <option value = "Car">Car</option>
-                <option value = "Truck">Truck</option>
-                <option value = "Bus">Bus</option>
+                <option value = "Bike">Auto</option>
             </select>
-            <input type = "text" id = "driverName" placeholder="Driver Name">
-            <select id = "available">
-                <option value = "">Select Availability</option>
-                <option value = "Available">Available</option>
-                 <option value = "Unavailable">Unavailable</option>
+            <input type = "text" id = "driverName" placeholder="DriverName">
+            <select id = "availability">
+                 <option value = "Available">Available</option>
+                <option value = "UnAvailable">UnAvailable</option>
             </select>
-            <button onclick="addingFleet()">Add Fleet</button>
-        </div>
-        <div class = "content">
-            <h2>Fleet List</h2>
-            <div id = "fleetContain" class = "fleet-grid"></div>
-        </div>
+            <button id = "addBtn">Add Fleet</button>
+        </aside>
+
+        <main class = "main">
+            <div class = "filters">
+                <select id = "filterCategory">
+                    <option value = "">All Category</option>
+                     <option value = "Auto">Auto</option>
+                      <option value = "Car">Car</option>
+                      <option value = "Bike">Bike</option>
+                </select>
+
+                <select id = "filterAvailability">
+                    <option value = ""> All Available</option>
+                     <option value = "Available">Available</option>
+                      <option value = "Unavailable"> Unavailable</option>
+                </select>
+                
+                    <button id = "clearFilter"> Clear Filter</button>
+            </div>
+            <table id = "fleetTable">
+                <thead>
+                    <tr>
+                        <th> Vehicle No</th>
+                        <th> Category</th>
+                        <th> Driver</th>
+                        <th> Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+        </main>
     </div>
     <script src = "script.js"></script>
 </body>

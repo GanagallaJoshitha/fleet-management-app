@@ -37,14 +37,24 @@ button:hover{
     background:#0053ab;
 }
 .navbar{
-    width: 100%;
     background: black;
     color:white;
-    padding: 15px 20px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between
+    padding: 12px 20px;
 }
-.navbar h2{
-    margin: 0;
+.container{
+    display: flex;
+}
+.sidebar{
+    width:260px;
+    background: white;
+    padding: 20px;
+    border-right: 1px soild white;
+}
+.sidebar h3{
+    margin-top: 0;
+}
+.sidebar input, 
+.sidebar select,
+.sidebar button{
+    
 }
