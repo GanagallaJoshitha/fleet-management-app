@@ -7,9 +7,34 @@
     <link rel = "stylesheet" href = "style.css">
 </head>
 <body>
-    <div class = "navbar">
-        <h2>Admin Dashboard</h2>
+    <header class = "top-nav"></header>
+    <div class = "nav-left">
+        <h2>Fleet Admin</h2>
     </div>
+    <div class = "nav-filters">
+        <label>
+            Category:
+            <select id = "filterCategory">
+                <option value = "All">All</option>
+                <option>Auto</option>
+                <option>Car</option>
+                 <option>Truck</option>
+                <option>Bus</option>
+            </select>
+        </label>
+
+        <label>
+            Availability:
+            <select id = "filterAvailability">
+                <option value = "All Availability">All</option>
+                <option value = "Available">Available</option>
+              <option value = "Unavailable">Available</option>
+            </select>
+        </label>
+
+        <button id = "clearFilterBtn" class = "small">Clear Filter</button>
+    </div>
+</header>
     <div class = "dash-container">
         <div class = "sidebar">
             <h3>Add Fleet</h3>
