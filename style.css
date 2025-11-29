@@ -31,3 +31,15 @@ button{
 button:hover{
     background:#0053ab;
 }
+.navbar{
+    width: 100%;
+    background: black;
+    color:white;
+    padding: 15px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between
+}
+.navbar h2{
+    margin: 0;
+}
