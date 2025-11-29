@@ -1,0 +1,33 @@
+.body{
+    font-family: 'Courier New', Courier, monospace;
+    background: white;
+    margin:0;
+    padding:0;
+}
+.login-box{
+    background:white;
+    padding: 25px;
+    width: 300px;
+    border-radius: 8px;
+    box-shadow:0 0 10px rgba(108, 107, 107, 0.1);
+    margin:100px auto;
+}
+input{
+    width:100%;
+    padding: 10px;
+    margin: 8px 0;
+    border-radius: 5px;
+    border: 1px solid #c8c4c4;
+}
+button{
+    width: 100%;
+    padding: 10px;
+    background:#5f98d5;
+    color: white;
+    border:none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+button:hover{
+    background:#0053ab;
+}
