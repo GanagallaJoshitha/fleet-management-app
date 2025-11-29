@@ -13,3 +13,25 @@ function login(){
         alert("Wrong Email or Password");
     }
 }
+
+let fleetData = [];
+
+document.getElementById("addBtn").addEventListener("click", () => {
+    let vehicle = document.getElementById("vehicleNumber").ariaValueMax.trim();
+    let category = document.getElementById("category").ariaValueMax.trim();
+    let driver = document.getElementById("driverName").ariaValueMax.trim();
+    let availability = document.getElementById("availability").ariaValueMax.trim();
+
+    if(!vehicle || driver){
+        alert("Please fill all fields!");
+        return;
+    }
+    fleetData.push({
+        vehicle,
+        category,
+        driver,
+        availability
+    });
+})
+renderTable(fleetData);
+
